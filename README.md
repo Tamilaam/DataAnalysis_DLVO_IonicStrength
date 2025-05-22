@@ -21,8 +21,10 @@ $$
 ## Method Summary
 
 - Experimental data: `distance (nm)`, `force (nN)`, `force error (nN)`
-- Model:  
-  $$ F(d) = F_0 + a d + c e^{-d/\lambda_D} $$
+- Model:
+- 
+F(d) = F₀ + a·d + c·exp(-d / λ_D)
+
 - Fitting strategy:
   - Estimate initial parameters from linear and exponential regions
   - Perform **weighted nonlinear least squares** fit using `scipy.optimize.curve_fit`
